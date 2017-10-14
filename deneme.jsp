@@ -1,28 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
-<script type=text/javascript>
-function GetSelectedItem()
-{
-    
-}
 
-</script>
-<script>
-function GetSelectedItem2()
-{
-    var e = document.getElementById(nadir);
-    var strSel = e.options[e.selectedIndex].value;
-    document.getElementById("2").action += strSel + "/";
-}
-</script>
-   <form name="2" id="2" onSubmit="return GetSelectedItem2();">
+// sinif ve nadir dropdownlist'lerinden seçilen değerleri : "...../Naturel/Normal/1 " gibi post etmeye çalışıyorumda beceremedim
+//amacım bu değerleri maincontrollerde pathvariable ile kullanıp hem Mysql sorgusunu çalıştırmak hemde paging işlemini halletmiş olmak
+<form name="2" id="2" onSubmit="???">
       <table>
          <tr>
          <h6>Sınıfı seçin</h6>
@@ -53,6 +32,3 @@ function GetSelectedItem2()
 </select>
  <input type="submit">
   </form>
-
-</body>
-</html>
